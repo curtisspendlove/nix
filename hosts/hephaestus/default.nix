@@ -16,6 +16,21 @@
     onActivation.upgrade = true;
     # updates homebrew packages on activation,
     # can make darwin-rebuild much slower (otherwise i'd forget to do it ever though)
+    brews = [
+      "mas" # mac app store cli
+      "ansible"
+      "ansible-lint"
+      "asdf"
+      "coreutils"
+      "gh"
+      "htop"
+      "jq"
+      "smartmontools"
+      "terraform"
+      "tree"
+      "watch"
+      "wget"
+    ];
     casks = [
       "1password"
       "balenaetcher"
