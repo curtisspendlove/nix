@@ -48,6 +48,10 @@
       "visual-studio-code"
       "yubico-yubikey-manager"
     ];
+    masApps = {
+      "Amphetamine" = 937984704;
+      "Microsoft Remote Desktop" = 1295203466;
+    };
   };
 
   nix = {
