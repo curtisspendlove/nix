@@ -18,7 +18,20 @@
     # can make darwin-rebuild much slower (otherwise i'd forget to do it ever though)
     casks = [
       "1password"
+      "balenaetcher"
+      "bartender"
+      "discord"
+      "docker"
+      "firefox"
+      "google-chrome"
+      "istat-menus"
+      "iterm2"
+      "logseq"
+      "mimestream"
+      "moom"
+      "setapp"
       "visual-studio-code"
+      "yubico-yubikey-manager"
     ];
   };
 
