@@ -29,3 +29,13 @@ The `Justfile` does all of this if you install `just` (which can be done via hom
 You can change the hostname of your Mac in the Sharing Panel (older) or General Settings (newer).
 
 (add screenshot of general settings panel)
+
+## Thanks
+
+Thanks goes out to a few people from the Linux community for the not-so-gentle push toward `nix`:
+
+- [Jupiter Broadcasting](https://www.jupiterbroadcasting.com) (particularly: [LINUX Unplugged](https://www.jupiterbroadcasting.com/show/linux-unplugged/) and [Self Hosted](https://www.jupiterbroadcasting.com/show/self-hosted/))
+- [Alex Kretzschmar](https://blog.ktz.me) ([ironicbadger](https://github.com/ironicbadger?tab=repositories))
+- [Martin Wimpress](https://wimpysworld.com) ([wimpysworld](https://github.com/wimpysworld))
+
+*I dream of attaining `nix` god-mode like Wimpy at some point in the near future.*
