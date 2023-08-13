@@ -10,6 +10,10 @@
   home-manager.useUserPackages = true;
   home-manager.users.cvs = { pkgs, ... }: {
     home.stateVersion = "23.05";
+    home.packages = with pkgs; [
+      mosh
+      tmux
+    ];
   };
   homebrew = {
     enable = true;
