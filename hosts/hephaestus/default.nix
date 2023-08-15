@@ -19,14 +19,29 @@
     programs.home-manager.enable = true;
 
     home.packages = with pkgs; [
+      ansible
       bat
+      coreutils
       direnv
+      du-dust
+      dua
+      duf
       git
       gh
       htop
+      hub
+      just
+      jq
       mosh
+      neofetch
       nix-direnv
+      nmap
+      terraform
       tmux
+      tree
+      unzip
+      watch
+      wget
     ];
 
     programs.git = {
@@ -56,25 +71,26 @@
     onActivation.upgrade = true;
     # updates homebrew packages on activation,
     # can make darwin-rebuild much slower (otherwise i'd forget to do it ever though)
-
+    taps = [
+      #
+    ];
     brews = [
       "mas" # mac app store cli
-      "ansible"
-      "ansible-lint"
       "asdf"
-      "coreutils"
-      "jq"
-      "smartmontools"
-      "terraform"
-      "tree"
-      "watch"
-      "wget"
+      # asdf ruby-build?
+      # "postgresql@15"
+      # "ruby-build"
+      # "openssl@3"
+      # "readline"
+      # "libyaml"
+      # "gmp"
     ];
 
     casks = [
       "1password"
       "1password-cli"
       "android-studio"
+      "arc"
       "balenaetcher"
       "bartender"
       "discord"
@@ -86,15 +102,25 @@
       "logseq"
       "mimestream"
       "moom"
+      "netnewswire"
+      "obs"
+      "raycast"
       "setapp"
       "steam"
+      "utm"
       "visual-studio-code"
       "yubico-yubikey-manager"
     ];
 
     masApps = {
       "Amphetamine" = 937984704;
+      "Keynote" = 409183694;
       "Microsoft Remote Desktop" = 1295203466;
+      "Numbers" = 409203825;
+      "Pages" = 409201541;
+      "Tailscale" = 1475387142;
+      # "UTM Virtual Machines" = 1538878817;
+      # "Xcode" = 497799835;
     };
   };
 

@@ -20,6 +20,11 @@ switch target_host=hostname: (build target_host)
   @echo "switching to new config for {{target_host}}"
   ./result/sw/bin/darwin-rebuild switch --flake ".#{{target_host}}"
 
+[macos]
+setup target_host=hostname: (switch target_host)
+  @echo "executing addtional setup script for {{target_host}}"
+  ./bin/setup
+
 ### linux
 # Build the NixOS configuration without switching to it
 [linux]
@@ -38,7 +43,6 @@ switch target_host=hostname:
 # Update flake inputs to their latest revisions
 update:
   nix flake update
-
 
 # Garbage collect old OS generations and remove stale packages from the nix store
 gc generations="5d":

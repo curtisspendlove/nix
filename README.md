@@ -4,9 +4,9 @@
 
 On a clean Mac, it'll need nix and homebrew (want to add these dependencies into the nix config somehow, not sure if it's possible).
 
-I've just installed homebrew in the default manner.
+I've just installed [homebrew](https://brew.sh) in the default manner.
 
-I like the Determinate Systems Nix Installer: https://zero-to-nix.com/start/install.
+I like the [Determinate Nix Installer](https://zero-to-nix.com/concepts/nix-installer).
 
 With these, you should be able to run:
 
@@ -28,7 +28,43 @@ The `Justfile` does all of this if you install `just` (which can be done via hom
 
 You can change the hostname of your Mac in the Sharing Panel (older) or General Settings (newer).
 
+You'll also likely want to customize the personal information in the config sections and lists of installed software.
+
+I plan on breaking these out into a cleaner set of files in the future.
+
 (add screenshot of general settings panel)
+
+## Troubleshooting
+
+If one needs to shoot one's troubles...
+
+You may run into ruby build issues when running beta versions of macOS. You'll need your `xcode-select` configuration to point to a current version of Xcode / Command Line Tools:
+
+```
+Last 10 log lines:
+checking for a race-free mkdir -p... /opt/homebrew/bin/gmkdir -p
+checking for dtrace... dtrace
+checking for dot... no
+checking for doxygen... no
+checking for pkg-config... pkg-config
+checking whether it is Android... no
+checking for cd using physical directory... cd -P
+checking whether CFLAGS is valid... yes
+checking whether LDFLAGS is valid... no
+configure: error: something wrong with LDFLAGS="-L/Users/cvs/.asdf/installs/ruby/3.2.2/lib
+```
+
+Release version of Xcode:
+`sudo xcode-select -s /Library/Developer/CommandLineTools`
+
+Pre-release version of Xcode:
+`sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer`
+
+I'm currently working on this issue...until I have `asdf` installig ruby properly; I'm running the brew formula for current ruby.
+
+If using the workaround, you may have to temporarily set your shell `PATH` to use the homebrew ruby first:
+
+`export PATH="/opt/homebrew/opt/ruby/bin:$PATH"`
 
 ## Thanks
 
