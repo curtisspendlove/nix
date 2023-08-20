@@ -1,10 +1,15 @@
 #!/bin/bash
 
+echo "== homebrew upgrade =="
+brew update && brew outdated && brew upgrade && brew cleanup
+
+
 # asdf all the things
 echo "== asdf plugins =="
 asdf plugin add nodejs
 asdf plugin add ruby
 asdf plugin add rust
+asdf plugin add postgres
 
 asdf install nodejs latest
 asdf install nodejs 18.17.1
@@ -13,11 +18,16 @@ asdf install ruby latest
 
 asdf install rust latest
 
+asdf install postgres latest
+
 asdf global nodejs latest
 asdf global ruby 3.2.2
 asdf global rust latest
+asdf global postgres latest
 
 asdf current
 
-brew update && brew outdated && brew upgrade && brew cleanup
- 
+# https://github.com/smashedtoatoms/asdf-postgres
+# pg_ctl initdb
+# pg_ctl cvs
+# pg_ctl start

@@ -97,6 +97,7 @@
       "discord"
       "docker"
       "firefox"
+      "github"
       "google-chrome"
       "istat-menus"
       "iterm2"
@@ -106,11 +107,17 @@
       "netnewswire"
       "nova"
       "obs"
+      "postgres-unofficial"
+      "postico"
       "raycast"
       "setapp"
       "steam"
+      "transmit"
+      "tripmode"
+      "tower"
       "utm"
       "visual-studio-code"
+      "warp"
       # "yubico-yubikey-manager" # requires Rosetta 2
     ];
 
