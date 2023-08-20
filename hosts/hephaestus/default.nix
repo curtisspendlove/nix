@@ -77,6 +77,7 @@
     brews = [
       "mas" # mac app store cli
       "asdf"
+      "pam-reattach"
       # asdf ruby-build?
       # "postgresql@15"
       # "ruby-build"
@@ -103,24 +104,26 @@
       "mimestream"
       "moom"
       "netnewswire"
+      "nova"
       "obs"
       "raycast"
       "setapp"
       "steam"
       "utm"
       "visual-studio-code"
-      "yubico-yubikey-manager"
+      # "yubico-yubikey-manager" # requires Rosetta 2
     ];
 
     masApps = {
+      "1Password for Safari" = 1569813296;
       "Amphetamine" = 937984704;
       "Keynote" = 409183694;
       "Microsoft Remote Desktop" = 1295203466;
       "Numbers" = 409203825;
       "Pages" = 409201541;
       "Tailscale" = 1475387142;
-      # "UTM Virtual Machines" = 1538878817;
-      # "Xcode" = 497799835;
+      # "UTM Virtual Machines" = 1538878817; # purchase in MAS or use free from brew
+      "Xcode" = 497799835;
     };
   };
 
