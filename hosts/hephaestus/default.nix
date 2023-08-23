@@ -8,6 +8,9 @@
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
 
+  # Add ability to used TouchID for sudo authentication
+  security.pam.enableSudoTouchIdAuth = true;
+
   users.users.cvs = {
     name = "cvs";
     home = "/Users/cvs";
@@ -57,6 +60,8 @@
 
     programs.zsh = {
       enable = true;
+      enableAutosuggestions = true;
+      enableCompletion = true;
       zplug = {
         enable = true;
         plugins = [
@@ -109,6 +114,7 @@
       "obs"
       "postgres-unofficial"
       "postico"
+      "raindropio"
       "raycast"
       "setapp"
       "steam"
@@ -128,6 +134,7 @@
       "Microsoft Remote Desktop" = 1295203466;
       "Numbers" = 409203825;
       "Pages" = 409201541;
+      "Save to Raindrop.io" = 1549370672;
       "Tailscale" = 1475387142;
       # "UTM Virtual Machines" = 1538878817; # purchase in MAS or use free from brew
       "Xcode" = 497799835;
