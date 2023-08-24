@@ -23,6 +23,7 @@
 
     home.packages = with pkgs; [
       ansible
+      atuin
       bat
       coreutils
       direnv
@@ -62,6 +63,7 @@
       enable = true;
       enableAutosuggestions = true;
       enableCompletion = true;
+      initExtra = "eval \"$(atuin init zsh)\"\n";
       zplug = {
         enable = true;
         plugins = [
