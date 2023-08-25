@@ -50,6 +50,7 @@
 
     programs.git = {
       enable = true;
+      extraConfig.init.defaultBranch = "main";
       userEmail = "curtis.spendlove@knightoftheoldcode.dev";
       userName = "Curtis Spendlove";
       delta.enable = true;
