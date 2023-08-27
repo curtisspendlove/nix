@@ -85,6 +85,8 @@
     brews = [
       "mas" # mac app store cli
       "asdf"
+      "epubcheck"
+      "imagemagick"
       "pam-reattach"
       # asdf ruby-build?
       # "postgresql@15"
@@ -102,11 +104,13 @@
       "arc"
       "balenaetcher"
       "bartender"
+      "calibre"
       "discord"
       "docker"
       "firefox"
       "github"
       "google-chrome"
+      "inkscape"
       "istat-menus"
       "iterm2"
       "logseq"
@@ -115,6 +119,7 @@
       "netnewswire"
       "nova"
       "obs"
+      "phantomjs"
       "postgres-unofficial"
       "postico"
       "raindropio"
