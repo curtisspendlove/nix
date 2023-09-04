@@ -125,6 +125,7 @@
       "raindropio"
       "raycast"
       "setapp"
+      "spotify"
       "steam"
       "transmit"
       "tripmode"
@@ -138,6 +139,7 @@
     masApps = {
       "1Password for Safari" = 1569813296;
       "Amphetamine" = 937984704;
+      "Downlink" = 1454269192;
       "Keynote" = 409183694;
       "Microsoft Remote Desktop" = 1295203466;
       "Numbers" = 409203825;
