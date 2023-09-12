@@ -86,6 +86,7 @@
       "mas" # mac app store cli
       "asdf"
       "epubcheck"
+      "git-standup"
       "imagemagick"
       "pam-reattach"
       # asdf ruby-build?
@@ -110,6 +111,7 @@
       "firefox"
       "github"
       "google-chrome"
+      "hazel"
       "inkscape"
       "istat-menus"
       "iterm2"
@@ -127,6 +129,7 @@
       "setapp"
       "spotify"
       "steam"
+      "swiftbar"
       "transmit"
       "tripmode"
       "tower"
