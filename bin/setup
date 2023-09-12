@@ -6,24 +6,28 @@ brew update && brew outdated && brew upgrade && brew cleanup
 
 # asdf all the things
 echo "== asdf plugins =="
+asdf plugin add doctl
 asdf plugin add nodejs
+asdf plugin add postgres
 asdf plugin add ruby
 asdf plugin add rust
-asdf plugin add postgres
+
+asdf install doctl latest
 
 asdf install nodejs latest
 asdf install nodejs 18.17.1
+
+asdf install postgres latest
 
 asdf install ruby latest
 
 asdf install rust latest
 
-asdf install postgres latest
-
+asdf global doctl latest
 asdf global nodejs latest
+asdf global postgres latest
 asdf global ruby 3.2.2
 asdf global rust latest
-asdf global postgres latest
 
 asdf current
 
