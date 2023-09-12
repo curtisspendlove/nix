@@ -105,6 +105,7 @@
       "arc"
       "balenaetcher"
       "bartender"
+      "bbedit"
       "calibre"
       "discord"
       "docker"
