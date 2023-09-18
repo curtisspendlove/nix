@@ -25,11 +25,14 @@
       ansible
       atuin
       bat
+      bison
       coreutils
+      curl
       direnv
       du-dust
       dua
       duf
+      gcc
       git
       gh
       htop
@@ -39,6 +42,7 @@
       mosh
       neofetch
       nix-direnv
+      readline
       nmap
       terraform
       tmux
@@ -46,6 +50,7 @@
       unzip
       watch
       wget
+      zlib
     ];
 
     programs.git = {
@@ -87,7 +92,9 @@
       "asdf"
       "epubcheck"
       "git-standup"
+      "icu4c"
       "imagemagick"
+      "ossp-uuid"
       "pam-reattach"
       # asdf ruby-build?
       # "postgresql@15"
