@@ -90,12 +90,14 @@
     brews = [
       "mas" # mac app store cli
       "asdf"
+      "brew-gem"
       "epubcheck"
       "git-standup"
       "icu4c"
       "imagemagick"
       "ossp-uuid"
       "pam-reattach"
+      "yazi"
       # asdf ruby-build?
       # "postgresql@15"
       # "ruby-build"

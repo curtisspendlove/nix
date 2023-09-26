@@ -1,2 +1,5 @@
 .DS_Store
 result
+
+# ignore 'doing' config
+.doingrc
