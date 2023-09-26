@@ -17,7 +17,13 @@
   };
 
   home-manager.users.cvs = { pkgs, ... }: {
-    home.stateVersion = "23.05";
+    home = {
+      stateVersion = "23.05";
+      
+      sessionVariables = {
+        EDITOR = "nova";
+      };
+    };
 
     programs.home-manager.enable = true;
 
