@@ -9,6 +9,7 @@ echo "== asdf plugins =="
 asdf plugin add doctl
 asdf plugin add nodejs
 asdf plugin add postgres
+asdf plugin add restic
 asdf plugin add ruby
 asdf plugin add rust
 
@@ -19,6 +20,8 @@ asdf install nodejs 18.17.1
 
 asdf install postgres latest
 
+asdf install restic latest
+
 asdf install ruby latest
 
 asdf install rust latest
@@ -26,6 +29,7 @@ asdf install rust latest
 asdf global doctl latest
 asdf global nodejs latest
 asdf global postgres latest
+asdf global restic latest
 asdf global ruby 3.2.2
 asdf global rust latest
 
