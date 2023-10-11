@@ -133,6 +133,7 @@
       "inkscape"
       "istat-menus"
       "iterm2"
+      "launchcontrol"
       "logseq"
       "mimestream"
       "moom"
@@ -164,6 +165,7 @@
       "Keynote" = 409183694;
       "Microsoft Remote Desktop" = 1295203466;
       "Numbers" = 409203825;
+      "Parcel - Delivery Tracking" = 639968404;
       "Pages" = 409201541;
       "Save to Raindrop.io" = 1549370672;
       "Tailscale" = 1475387142;
