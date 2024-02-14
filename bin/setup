@@ -9,16 +9,23 @@ echo "== asdf plugins =="
 asdf plugin add doctl
 asdf plugin add nodejs
 asdf plugin add postgres
+asdf plugin add python
 asdf plugin add restic
 asdf plugin add ruby
 asdf plugin add rust
 
 asdf install doctl latest
 
-asdf install nodejs latest
-asdf install nodejs 18.17.1
+asdf install nodejs latest # v21.6.1	-	2024-01-22	v10.2.4
+asdf install nodejs lts # v20.11.0	Iron	2024-01-09	v10.2.4
+asdf install nodejs 19.9.0 # v19.9.0	-	2023-04-10	v9.6.3
+asdf install nodejs 18.19.0 # v18.19.0	Hydrogen	2023-11-29	v10.2.3
+asdf install nodejs 17.9.1 # v17.9.1	-	2022-06-01	v8.11.0
+asdf install nodejs 16.20.2 # v16.20.2	Gallium	2023-08-08	v8.19.4
 
 asdf install postgres latest
+
+asdf install python latest
 
 asdf install restic latest
 
@@ -29,8 +36,9 @@ asdf install rust latest
 asdf global doctl latest
 asdf global nodejs latest
 asdf global postgres latest
+asdf global python latest
 asdf global restic latest
-asdf global ruby 3.2.2
+asdf global ruby latest
 asdf global rust latest
 
 asdf current
@@ -39,3 +47,19 @@ asdf current
 # pg_ctl initdb
 # pg_ctl cvs
 # pg_ctl start
+
+# TODO - Add Remaining Versions?
+# https://nodejs.org/en/about/previous-releases
+# v15.14.0	-	2021-04-06	v7.7.6	ReleasesChangelogDocs
+# v14.21.3	Fermium	2023-02-16	v6.14.18	ReleasesChangelogDocs
+# v13.14.0	-	2020-04-29	v6.14.4	ReleasesChangelogDocs
+# v12.22.12	Erbium	2022-04-05	v6.14.16	ReleasesChangelogDocs
+# v11.15.0	-	2019-04-30	v6.7.0	ReleasesChangelogDocs
+# v10.24.1	Dubnium	2021-04-06	v6.14.12	ReleasesChangelogDocs
+# v9.11.2	-	2018-06-12	v5.6.0	ReleasesChangelogDocs
+# v8.17.0	Carbon	2019-12-17	v6.13.4	ReleasesChangelogDocs
+# v7.10.1	-	2017-07-11	v4.2.0	ReleasesChangelogDocs
+# v6.17.1	Boron	2019-04-03	v3.10.10	ReleasesChangelogDocs
+# v5.12.0	-	2016-06-23	v3.8.6	ReleasesChangelogDocs
+# v4.9.1	Argon	2018-03-29	v2.15.11	ReleasesChangelogDocs
+# v0.12.18	-	2017-02-22	v2.15.11	ReleasesChangelogDocs
