@@ -3,6 +3,11 @@
 echo "== homebrew upgrade =="
 brew update && brew outdated && brew upgrade && brew cleanup
 
+brew install ansible atuin bat bison coreutils cmake curl direnv dust dua-cli duf gcc git gh htop hub just jq lpeg luarocks mosh neofetch neovim readline nmap starship tmux tree unzip watch wget zlib
+
+brew install alacritty obsidian warp
+
+brew tap homebrew/cask-fonts && brew install --cask homebrew/cask-fonts/font-jetbrains-mono-nerd-font homebrew/cask-fonts/font-meslolg-nerd-font homebrew/cask-fonts/font-spacemono-nerd-font homebrew/cask-fonts/font-ubuntu-nerd-font
 
 # asdf all the things
 echo "== asdf plugins =="
@@ -13,6 +18,7 @@ asdf plugin add python
 asdf plugin add restic
 asdf plugin add ruby
 asdf plugin add rust
+asdf plugin add terraform
 
 asdf install doctl latest
 
@@ -23,7 +29,7 @@ asdf install nodejs 18.19.0 # v18.19.0	Hydrogen	2023-11-29	v10.2.3
 asdf install nodejs 17.9.1 # v17.9.1	-	2022-06-01	v8.11.0
 asdf install nodejs 16.20.2 # v16.20.2	Gallium	2023-08-08	v8.19.4
 
-asdf install postgres latest
+# asdf install postgres latest
 
 asdf install python latest
 
@@ -33,6 +39,8 @@ asdf install ruby latest
 
 asdf install rust latest
 
+asdf install terraform latest
+
 asdf global doctl latest
 asdf global nodejs latest
 asdf global postgres latest
@@ -40,6 +48,7 @@ asdf global python latest
 asdf global restic latest
 asdf global ruby latest
 asdf global rust latest
+asdf global terraform latest
 
 asdf current
 
