@@ -1,13 +1,27 @@
 #!/bin/bash
+# README: eventually make this into a readme
+# TripMode from SetApp since I haven't upgraded my standalone license.
+# Figure out what upgrading standalone licenses would cost and compare.
 
-echo "== homebrew upgrade =="
+# echo "== homebrew upgrade =="
 brew update && brew outdated && brew upgrade && brew cleanup
 
-brew install ansible atuin bat bison coreutils cmake curl direnv dust dua-cli duf gcc git gh htop hub just jq lpeg luarocks mosh neofetch neovim readline nmap starship tmux tree unzip watch wget zlib
+brew bundle --file ~/.config/brew/Brewfile
 
-brew install alacritty obsidian warp
+# brew install ansible atuin bat bison coreutils cmake curl direnv dust dua-cli duf eza fzf gcc git gh htop hub just jq lpeg luarocks mosh neofetch neovim readline nmap starship tmux tree unzip watch wget zlib
 
-brew tap homebrew/cask-fonts && brew install --cask homebrew/cask-fonts/font-jetbrains-mono-nerd-font homebrew/cask-fonts/font-meslolg-nerd-font homebrew/cask-fonts/font-spacemono-nerd-font homebrew/cask-fonts/font-ubuntu-nerd-font
+# brew tap homebrew/cask-fonts 
+
+# brew install --cask homebrew/cask-fonts/font-jetbrains-mono-nerd-font
+# brew install --cask homebrew/cask-fonts/font-meslo-lg-nerd-font
+# brew install --cask homebrew/cask-fonts/font-space-mono-nerd-font
+# brew install --cask homebrew/cask-fonts/font-ubuntu-nerd-font
+
+# brew install --cask alacritty microsoft-edge obsidian warp
+
+# brew install --cask microsoft-excel microsoft-onenote microsoft-powerpoint microsoft-word microsoft-remote-desktop microsoft-outlook microsoft-teams
+
+# brew install --cask microsoft-auto-update microsoft-excel microsoft-onenote microsoft-powerpoint microsoft-word microsoft-azure-storage-explorer microsoft-office microsoft-openjdk microsoft-remote-desktop microsoft-edge microsoft-office-businesspro microsoft-outlook microsoft-teams
 
 # asdf all the things
 echo "== asdf plugins =="
@@ -19,6 +33,8 @@ asdf plugin add restic
 asdf plugin add ruby
 asdf plugin add rust
 asdf plugin add terraform
+
+asdf plugin update --all
 
 asdf install doctl latest
 
